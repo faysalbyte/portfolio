@@ -12,37 +12,28 @@ const typing =
  */
 
 const words = [
-
-    "MERN STACK DEVELOPER",
-
-    "FULL STACK WEB DEVELOPER",
-
-    "FRONTEND DEVELOPER",
-
-    "BACKEND DEVELOPER",
-
-    "WEB DESIGNER",
-
-    "eCOMMERCE DEVELOPER",
-
-    "SEO EXPERT",
-
-    "DIGITAL MARKETING EXPERT",
-
-    "WORDPRESS DEVELOPER",
-
-    "SHOPIFY DEVELOPER",
-
-    "ANDROID APP DEVELOPER",
-
-    "SOFTWARE QA PROFESSIONAL",
-
-    "UI/UX DESIGNER",
-
-    "WEB DEVELOPMENT TRAINER"
-
+    "INDUSTRIAL CERTIFIED MERN STACK DEVELOPER",
+    "WEB DESIGN & WEB DEVELOPMENT FOR FREELANCING TRAINER",
+    "National Skills Development Authority (NSDA) Level-3 & Level-5 CERTIFIED WEB DESIGN & WEB DEVELOPER FOR FREELANCING",
+    "National Skills Development Authority (NSDA) Level-4 ANDROID APP DEVELOPMENT WITH KOTLIN",
+    "National Skills Development Authority (NSDA) Level-3 & Level-4 DIGITAL MARKETING FOR FREELANCING (SEO)",
+    "SEO EXPERT..",
+    "Full STACK WEB DEVELOPER..",
+    "Frontend Developer..",
+    "Backend Developer..",
+    "CMS DEVELOPER..",
+    "CMS EXPERT..",
+    "Shopify EXPERT..",
+    "eCOMMERCE DEVELOPER..",
+    "WordPress DEVELOPER..",
+    "Webflow DEVELOPER..",
+    "Wix DEVELOPER..",
+    "Squarespace DEVELOPER..",
+    "Certified Software Quality Assurance National Skills Development Authority (NSDA) Level-3",
+    "Certified Software Quality Assurance",
+    "Knowledge UI/UX..",
+    "Knowledge DevOps .."
 ];
-
 
 const colors = [
 
