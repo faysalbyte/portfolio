@@ -1,75 +1,122 @@
-const typing = document.getElementById("typing");
+/* =====================================================
+   TYPING EFFECT
+===================================================== */
+
+const typing =
+    document.getElementById("typing");
+
+
+/*
+ * Shorter titles are intentionally used here.
+ * Detailed certifications can stay on skills.html.
+ */
 
 const words = [
-    "INDUSTRIAL CERTIFIED MERN STACK DEVELOPER",
-    "WEB APPLICATION DEVELOPMENT WITH PYTHON National Skills Development Authority (NSDA) LEVEL-4",
-    "WEB DESIGN & WEB DEVELOPMENT FOR FREELANCING TRAINER",
-    "National Skills Development Authority (NSDA) Level-3 & Level-5 CERTIFIED WEB DESIGN & WEB DEVELOPER FOR FREELANCING",
-    "National Skills Development Authority (NSDA) Level-4 ANDROID APP DEVELOPMENT WITH KOTLIN",
-    "National Skills Development Authority (NSDA) Level-3 & Level-4 DIGITAL MARKETING FOR FREELANCING (SEO)",
-    "SEO EXPERT..",
-    "Full STACK WEB DEVELOPER..",
-    "Frontend Developer..",
-    "Backend Developer..",
-    "CMS DEVELOPER..",
-    "CMS EXPERT..",
-    "Shopify EXPERT..",
-    "eCOMMERCE DEVELOPER..",
-    "WordPress DEVELOPER..",
-    "Webflow DEVELOPER..",
-    "Wix DEVELOPER..",
-    "Squarespace DEVELOPER..",
-    "Certified Software Quality Assurance National Skills Development Authority (NSDA) Level-3",
-    "Certified Software Quality Assurance",
-    "Knowledge UI/UX..",
-    "Knowledge DevOps .."
+
+    "MERN STACK DEVELOPER",
+
+    "FULL STACK WEB DEVELOPER",
+
+    "FRONTEND DEVELOPER",
+
+    "BACKEND DEVELOPER",
+
+    "WEB DESIGNER",
+
+    "eCOMMERCE DEVELOPER",
+
+    "SEO EXPERT",
+
+    "DIGITAL MARKETING EXPERT",
+
+    "WORDPRESS DEVELOPER",
+
+    "SHOPIFY DEVELOPER",
+
+    "ANDROID APP DEVELOPER",
+
+    "SOFTWARE QA PROFESSIONAL",
+
+    "UI/UX DESIGNER",
+
+    "WEB DEVELOPMENT TRAINER"
+
 ];
+
 
 const colors = [
+
     "#00E5FF",
+
     "#FF6B35",
+
     "#A855F7",
+
     "#22C55E",
+
     "#FACC15",
+
     "#FF2D55",
+
     "#3B82F6",
+
     "#06B6D4",
+
     "#F97316",
+
     "#8B5CF6",
+
     "#EC4899",
+
     "#14B8A6",
+
     "#EF4444",
-    "#84CC16",
-    "#6366F1",
-    "#F43F5E",
-    "#10B981",
-    "#EAB308",
-    "#D946EF",
-    "#38BDF8",
-    "#FB7185"
+
+    "#D946EF"
+
 ];
 
+
 let wordIndex = 0;
+
 let characterIndex = 0;
+
 let deleting = false;
+
 
 function typeWriter() {
 
-    if (!typing) return;
+    if (!typing) {
+        return;
+    }
 
-    const word = words[wordIndex];
-    const color = colors[wordIndex];
 
-    typing.style.color = color;
+    const word =
+        words[wordIndex];
+
+
+    const color =
+        colors[wordIndex];
+
+
+    typing.style.color =
+        color;
+
 
     typing.style.textShadow = `
         0 0 8px ${color}66,
         0 0 20px ${color}33
     `;
 
+
+    /* =========================
+       TYPING
+    ========================== */
+
     if (!deleting) {
 
         characterIndex++;
+
 
         typing.textContent =
             word.substring(
@@ -77,61 +124,92 @@ function typeWriter() {
                 characterIndex
             );
 
-        if (characterIndex >= word.length) {
+
+        if (
+            characterIndex >=
+            word.length
+        ) {
 
             deleting = true;
+
 
             setTimeout(
                 typeWriter,
                 1800
             );
 
-            return;
-        }
-
-        setTimeout(
-            typeWriter,
-            90
-        );
-
-    } else {
-
-        characterIndex--;
-
-        typing.textContent =
-            word.substring(
-                0,
-                characterIndex
-            );
-
-        if (characterIndex <= 0) {
-
-            deleting = false;
-
-            wordIndex =
-                (wordIndex + 1) %
-                words.length;
-
-            setTimeout(
-                typeWriter,
-                400
-            );
 
             return;
         }
 
+
         setTimeout(
             typeWriter,
-            45
+            70
         );
+
+
+        return;
     }
+
+
+    /* =========================
+       DELETING
+    ========================== */
+
+    characterIndex--;
+
+
+    typing.textContent =
+        word.substring(
+            0,
+            characterIndex
+        );
+
+
+    if (
+        characterIndex <= 0
+    ) {
+
+        deleting = false;
+
+
+        wordIndex =
+            (
+                wordIndex + 1
+            ) %
+            words.length;
+
+
+        setTimeout(
+            typeWriter,
+            350
+        );
+
+
+        return;
+    }
+
+
+    setTimeout(
+        typeWriter,
+        35
+    );
 }
+
 
 typeWriter();
 
 
+/* =====================================================
+   PORTRAIT BURN EFFECT
+===================================================== */
+
 const portrait =
-    document.getElementById("portrait");
+    document.getElementById(
+        "portrait"
+    );
+
 
 if (portrait) {
 
@@ -140,27 +218,60 @@ if (portrait) {
             ".image-first"
         );
 
+
     const secondImage =
         portrait.querySelector(
             ".image-second"
         );
+
 
     const particles =
         document.getElementById(
             "particles"
         );
 
-    let showingSecond = false;
-    let animationRunning = false;
-    let returnTimer = null;
+
+    let showingSecond =
+        false;
+
+
+    let animationRunning =
+        false;
+
+
+    let returnTimer =
+        null;
+
+
+    /* =========================
+       PARTICLES
+    ========================== */
 
     function createParticles() {
 
-        if (!particles) return;
+        if (!particles) {
+            return;
+        }
 
-        particles.innerHTML = "";
 
-        const particleCount = 55;
+        particles.innerHTML =
+            "";
+
+
+        /*
+         * Fewer particles on small
+         * devices for better performance.
+         */
+
+        const isMobile =
+            window.innerWidth <= 600;
+
+
+        const particleCount =
+            isMobile
+                ? 30
+                : 55;
+
 
         for (
             let i = 0;
@@ -173,50 +284,90 @@ if (portrait) {
                     "span"
                 );
 
+
             particle.className =
                 "particle";
 
+
             const x =
-                (Math.random() - 0.5) *
-                480;
+                (
+                    Math.random() - 0.5
+                ) *
+                (
+                    isMobile
+                        ? 300
+                        : 480
+                );
+
 
             const y =
-                (Math.random() - 0.5) *
-                620;
+                (
+                    Math.random() - 0.5
+                ) *
+                (
+                    isMobile
+                        ? 400
+                        : 620
+                );
+
 
             const size =
-                Math.random() * 5 + 2;
+                Math.random() *
+                5 +
+                2;
+
 
             particle.style.width =
                 `${size}px`;
 
+
             particle.style.height =
                 `${size}px`;
 
+
             particle.style.left =
-                `${Math.random() * 100}%`;
+                `${
+                    Math.random() *
+                    100
+                }%`;
+
 
             particle.style.top =
-                `${Math.random() * 100}%`;
+                `${
+                    Math.random() *
+                    100
+                }%`;
+
 
             particle.style.setProperty(
                 "--x",
                 `${x}px`
             );
 
+
             particle.style.setProperty(
                 "--y",
                 `${y}px`
             );
 
+
             particle.style.animationDelay =
-                `${Math.random() * 0.25}s`;
+                `${
+                    Math.random() *
+                    0.25
+                }s`;
+
 
             particles.appendChild(
                 particle
             );
         }
     }
+
+
+    /* =========================
+       BURN TO SECOND
+    ========================== */
 
     function burnToSecond() {
 
@@ -227,31 +378,54 @@ if (portrait) {
             return;
         }
 
-        animationRunning = true;
 
-        clearTimeout(returnTimer);
+        animationRunning =
+            true;
+
+
+        clearTimeout(
+            returnTimer
+        );
+
 
         createParticles();
+
 
         portrait.classList.add(
             "burning"
         );
 
+
+        /*
+         * Change image halfway
+         * through the fire animation.
+         */
+
         setTimeout(() => {
 
             if (firstImage) {
+
                 firstImage.style.opacity =
                     "0";
             }
 
+
             if (secondImage) {
+
                 secondImage.style.opacity =
                     "1";
             }
 
-            showingSecond = true;
+
+            showingSecond =
+                true;
 
         }, 650);
+
+
+        /*
+         * Remove fire
+         */
 
         setTimeout(() => {
 
@@ -259,20 +433,37 @@ if (portrait) {
                 "burning"
             );
 
+
             if (particles) {
-                particles.innerHTML = "";
+
+                particles.innerHTML =
+                    "";
             }
 
-            animationRunning = false;
+
+            animationRunning =
+                false;
 
         }, 1300);
 
-        returnTimer = setTimeout(() => {
 
-            burnToFirst();
+        /*
+         * Automatically return
+         * to first image.
+         */
 
-        }, 2000);
+        returnTimer =
+            setTimeout(() => {
+
+                burnToFirst();
+
+            }, 3000);
     }
+
+
+    /* =========================
+       BURN TO FIRST
+    ========================== */
 
     function burnToFirst() {
 
@@ -283,29 +474,40 @@ if (portrait) {
             return;
         }
 
-        animationRunning = true;
+
+        animationRunning =
+            true;
+
 
         createParticles();
+
 
         portrait.classList.add(
             "burning"
         );
 
+
         setTimeout(() => {
 
             if (secondImage) {
+
                 secondImage.style.opacity =
                     "0";
             }
 
+
             if (firstImage) {
+
                 firstImage.style.opacity =
                     "1";
             }
 
-            showingSecond = false;
+
+            showingSecond =
+                false;
 
         }, 650);
+
 
         setTimeout(() => {
 
@@ -313,32 +515,61 @@ if (portrait) {
                 "burning"
             );
 
+
             if (particles) {
-                particles.innerHTML = "";
+
+                particles.innerHTML =
+                    "";
             }
 
-            animationRunning = false;
+
+            animationRunning =
+                false;
 
         }, 1300);
     }
 
+
+    /* =========================
+       ACTIVATE
+    ========================== */
+
     function activatePortrait(event) {
 
         if (event) {
+
             event.preventDefault();
         }
 
+
+        /*
+         * Don't restart while
+         * already showing second.
+         */
+
         if (showingSecond) {
+
             return;
         }
 
+
         burnToSecond();
     }
+
+
+    /* =========================
+       DESKTOP
+    ========================== */
 
     portrait.addEventListener(
         "mouseenter",
         activatePortrait
     );
+
+
+    /* =========================
+       MOBILE TOUCH
+    ========================== */
 
     portrait.addEventListener(
         "touchstart",
@@ -348,30 +579,44 @@ if (portrait) {
         }
     );
 
+
+    /* =========================
+       KEYBOARD
+    ========================== */
+
     portrait.addEventListener(
         "keydown",
-        event => {
+        (event) => {
 
             if (
                 event.key === "Enter" ||
                 event.key === " "
             ) {
-                activatePortrait(event);
+
+                activatePortrait(
+                    event
+                );
             }
         }
     );
 }
 
 
+/* =====================================================
+   MOBILE MENU
+===================================================== */
+
 const menuButton =
     document.getElementById(
         "menuButton"
     );
 
+
 const mobileMenu =
     document.getElementById(
         "mobileMenu"
     );
+
 
 if (
     menuButton &&
@@ -382,16 +627,29 @@ if (
         "click",
         () => {
 
-            mobileMenu.classList.toggle(
-                "open"
+            const isOpen =
+                mobileMenu.classList.toggle(
+                    "open"
+                );
+
+
+            menuButton.setAttribute(
+                "aria-expanded",
+                isOpen
             );
 
         }
     );
 
+
+    /*
+     * Close menu after
+     * clicking a link.
+     */
+
     mobileMenu
         .querySelectorAll("a")
-        .forEach(link => {
+        .forEach((link) => {
 
             link.addEventListener(
                 "click",
@@ -401,120 +659,229 @@ if (
                         "open"
                     );
 
+
+                    menuButton.setAttribute(
+                        "aria-expanded",
+                        "false"
+                    );
                 }
             );
 
         });
+
+
+    /*
+     * Close when clicking
+     * outside the menu.
+     */
+
+    document.addEventListener(
+        "click",
+        (event) => {
+
+            if (
+                !mobileMenu.contains(
+                    event.target
+                ) &&
+                !menuButton.contains(
+                    event.target
+                )
+            ) {
+
+                mobileMenu.classList.remove(
+                    "open"
+                );
+
+
+                menuButton.setAttribute(
+                    "aria-expanded",
+                    "false"
+                );
+            }
+
+        }
+    );
 }
 
 
-let pageX = 0;
-let pageY = 0;
+/* =====================================================
+   DESKTOP MOUSE PARALLAX
+===================================================== */
 
-let targetX = 0;
-let targetY = 0;
+
+/*
+ * IMPORTANT:
+ *
+ * We do NOT use deviceorientation.
+ *
+ * We also don't directly overwrite
+ * portraitScene.style.transform.
+ *
+ * Instead, CSS variables are used.
+ *
+ * This means mobile CSS remains
+ * responsive.
+ */
 
 const background =
     document.querySelector(
         ".background"
     );
 
+
 const portraitScene =
     document.querySelector(
         ".portrait-scene"
     );
 
-function pageMotion() {
 
-    pageX +=
-        (targetX - pageX) *
-        0.025;
+let targetX = 0;
 
-    pageY +=
-        (targetY - pageY) *
-        0.025;
+let targetY = 0;
 
-    if (background) {
+let currentX = 0;
 
-        background.style.transform =
-            `translate3d(
-                ${pageX * 0.25}px,
-                ${pageY * 0.25}px,
-                0
-            )`;
-    }
+let currentY = 0;
 
-    if (portraitScene) {
 
-        portraitScene.style.transform =
-            `translate3d(
-                ${pageX * 0.04}px,
-                ${pageY * 0.04}px,
-                0
-            )`;
-    }
+/*
+ * Only activate mouse parallax
+ * on devices with a real mouse.
+ */
 
-    requestAnimationFrame(
-        pageMotion
+const canHover =
+    window.matchMedia(
+        "(hover: hover) and (pointer: fine)"
     );
-}
 
-window.addEventListener(
-    "mousemove",
-    event => {
 
-        targetX =
+if (
+    canHover.matches &&
+    portraitScene
+) {
+
+    window.addEventListener(
+        "mousemove",
+        (event) => {
+
+            targetX =
+                (
+                    event.clientX /
+                    window.innerWidth -
+                    0.5
+                ) *
+                20;
+
+
+            targetY =
+                (
+                    event.clientY /
+                    window.innerHeight -
+                    0.5
+                ) *
+                20;
+
+        },
+        {
+            passive: true
+        }
+    );
+
+
+    function pageMotion() {
+
+        currentX +=
             (
-                event.clientX /
-                window.innerWidth -
-                0.5
-            ) * 30;
+                targetX -
+                currentX
+            ) *
+            0.04;
 
-        targetY =
+
+        currentY +=
             (
-                event.clientY /
-                window.innerHeight -
-                0.5
-            ) * 30;
+                targetY -
+                currentY
+            ) *
+            0.04;
 
-    },
-    {
-        passive: true
-    }
-);
 
-window.addEventListener(
-    "deviceorientation",
-    event => {
+        /*
+         * Background movement
+         */
 
-        if (
-            typeof event.gamma !== "number" ||
-            typeof event.beta !== "number"
-        ) {
-            return;
+        if (background) {
+
+            background.style.transform =
+                `translate3d(
+                    ${currentX * 0.2}px,
+                    ${currentY * 0.2}px,
+                    0
+                )`;
         }
 
-        targetX =
-            Math.max(
-                -20,
-                Math.min(
-                    20,
-                    event.gamma
-                )
+
+        /*
+         * Portrait movement.
+         *
+         * CSS handles the actual
+         * transform.
+         */
+
+        portraitScene.style.setProperty(
+            "--move-x",
+            `${currentX * 0.04}px`
+        );
+
+
+        portraitScene.style.setProperty(
+            "--move-y",
+            `${currentY * 0.04}px`
+        );
+
+
+        requestAnimationFrame(
+            pageMotion
+        );
+    }
+
+
+    pageMotion();
+}
+
+
+/* =====================================================
+   RESIZE HANDLING
+===================================================== */
+
+window.addEventListener(
+    "resize",
+    () => {
+
+        /*
+         * Close mobile menu when
+         * switching to desktop.
+         */
+
+        if (
+            window.innerWidth > 800 &&
+            mobileMenu &&
+            menuButton
+        ) {
+
+            mobileMenu.classList.remove(
+                "open"
             );
 
-        targetY =
-            Math.max(
-                -20,
-                Math.min(
-                    20,
-                    event.beta - 45
-                )
+
+            menuButton.setAttribute(
+                "aria-expanded",
+                "false"
             );
+        }
+
     },
     {
         passive: true
     }
 );
-
-pageMotion();
