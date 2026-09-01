@@ -1,182 +1,86 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="MD Faysal Hossain — Certified MERN Stack Developer, Web Designer & Developer, Trainer, SEO Expert and NSDA Certified Professional."
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <meta name="description" content="MD Faysal Hossain — Certified MERN Stack Developer, Web Designer & Developer, Trainer, SEO Expert and NSDA Certified Professional." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#e8edf2" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://md-faysal-hossain-bdd.github.io/portfolio/" />
+  <meta property="og:title" content="MD FAYSAL HOSSAIN | MERN Stack Developer" />
+  <meta property="og:description" content="Certified MERN Stack Developer, Web Designer & Developer, Trainer and NSDA Certified Professional." />
+  <meta property="og:image" content="https://avatars.githubusercontent.com/u/229717438?v=4" />
+  <meta property="og:image:alt" content="MD Faysal Hossain - MERN Stack Developer" />
+  <meta property="og:site_name" content="MD FAYSAL HOSSAIN" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="MD FAYSAL HOSSAIN | MERN Stack Developer" />
+  <meta name="twitter:description" content="Certified MERN Stack Developer, Web Designer & Developer, Trainer and NSDA Certified Professional." />
+  <meta name="twitter:image" content="https://avatars.githubusercontent.com/u/229717438?v=4" />
+  <title>MD FAYSAL HOSSAIN | MERN Stack Developer</title>
 
-    <meta name="robots" content="index, follow" />
-    <meta name="theme-color" content="#e8edf2" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="shortcut icon" href="https://avatars.githubusercontent.com/u/229717438?v=4" type="image/x-icon" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="background" aria-hidden="true">
+    <div class="orb orb-one"></div>
+    <div class="orb orb-two"></div>
+    <div class="stars"></div>
+  </div>
 
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:url"
-      content="https://md-faysal-hossain-bdd.github.io/portfolio/"
-    />
-    <meta
-      property="og:title"
-      content="MD FAYSAL HOSSAIN | MERN Stack Developer"
-    />
-    <meta
-      property="og:description"
-      content="Certified MERN Stack Developer, Web Designer & Developer, Trainer and NSDA Certified Professional."
-    />
-    <meta
-      property="og:image"
-      content="https://avatars.githubusercontent.com/u/229717438?v=4"
-    />
-    <meta
-      property="og:image:alt"
-      content="MD Faysal Hossain - MERN Stack Developer"
-    />
-    <meta property="og:site_name" content="MD FAYSAL HOSSAIN" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta
-      name="twitter:title"
-      content="MD FAYSAL HOSSAIN | MERN Stack Developer"
-    />
-    <meta
-      name="twitter:description"
-      content="Certified MERN Stack Developer, Web Designer & Developer, Trainer and NSDA Certified Professional."
-    />
-    <meta
-      name="twitter:image"
-      content="https://avatars.githubusercontent.com/u/229717438?v=4"
-    />
-
-    <title>MD FAYSAL HOSSAIN | MERN Stack Developer</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      rel="shortcut icon"
-      href="https://avatars.githubusercontent.com/u/229717438?v=4"
-      type="image/x-icon"
-    />
-
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <div class="background" aria-hidden="true">
-      <div class="orb orb-one"></div>
-      <div class="orb orb-two"></div>
-      <div class="stars"></div>
+  <nav class="navbar" aria-label="Main navigation">
+    <a class="brand" href="/index.html" aria-label="Faysal home">Faysal<span class="brand-dots" aria-hidden="true">..</span></a>
+    <div class="nav-links" aria-label="Primary navigation">
+      <a href="/index.html" class="active" aria-current="page">Home</a>
+      <a href="/skills.html">About</a>
+      <a href="/portfolio.html">Portfolio</a>
+      <a href="/contact.html">Contact</a>
     </div>
-    <header class="navbar">
-      <a href="index.html" class="brand" aria-label="Faysal home">
-        FAYSAL<span>.</span>
-      </a>
+    <button type="button" class="menu-button" id="menuButton" aria-label="Open navigation menu" aria-expanded="false" aria-controls="mobileMenu">
+      <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+    </button>
+  </nav>
 
-      <nav class="nav-links" aria-label="Main navigation">
-        <a href="index.html" class="active" aria-current="page">Home</a>
-        <a href="skills.html">Skills</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-      </nav>
+  <div class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation" aria-hidden="true">
+    <a href="/index.html" aria-current="page">Home</a>
+    <a href="/skills.html">About</a>
+    <a href="/portfolio.html">Portfolio</a>
+    <a href="/contact.html">Contact</a>
+  </div>
 
-      <button
-        class="menu-button"
-        id="menuButton"
-        aria-label="Open navigation menu"
-        aria-expanded="false"
-        aria-controls="mobileMenu"
-        type="button"
-      >
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </button>
-    </header>
-
-    <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
-      <a href="index.html" aria-current="page">Home</a>
-      <a href="skills.html">Skills</a>
-      <a href="portfolio.html">Portfolio</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-
-    <main class="hero">
-      <section class="hero-left" aria-labelledby="hero-title">
-        <div class="intro-line">
-          <span aria-hidden="true"></span>
-          <p>Hello, I'm</p>
+  <main class="hero">
+    <section class="hero-left" aria-labelledby="hero-title">
+      <div class="intro-line"><span aria-hidden="true"></span><p>Hello, I'm</p></div>
+      <h1 class="name" id="hero-title">MD FAYSAL HOSSAIN</h1>
+      <div class="profession" aria-live="polite" aria-label="Professional roles">
+        <span id="typing"></span><span class="cursor" aria-hidden="true"></span>
+      </div>
+      <p class="about">Certified MERN Stack Developer, Web Designer & Developer, and Trainer specializing in modern web technologies, eCommerce, SEO, digital marketing, Android development, and software quality assurance. As an NSDA-certified professional, I focus on industry-oriented skills and practical solutions for successful careers.</p>
+      <div class="socials" aria-label="Social profiles">
+  
+      </div>
+    </section>
+    <section class="hero-right" aria-label="Profile image">
+      <div class="portrait-scene">
+        <div class="wave-container" aria-hidden="true">
+          <div class="wave wave-one"></div><div class="wave wave-two"></div><div class="wave wave-three"></div><div class="wave-glow"></div>
         </div>
-
-        <h1 class="name" id="hero-title">MD FAYSAL HOSSAIN</h1>
-
-        <div
-          class="profession"
-          aria-live="polite"
-          aria-label="Professional roles"
-        >
-          <span id="typing"></span>
-          <span class="cursor" aria-hidden="true"></span>
+        <div class="ring ring-one" aria-hidden="true"></div><div class="ring ring-two" aria-hidden="true"></div>
+        <div class="portrait" id="portrait" role="button" tabindex="0" aria-label="Activate profile image transition">
+          <img src="./personal-img/md-faysal-hossain-mern-stack-developer.png" alt="MD Faysal Hossain, MERN Stack Developer" class="portrait-image image-first" />
+          <img src="./personal-img/md-faysal-hossain-mern-stack-developer.jpeg" alt="MD Faysal Hossain alternative profile portrait" class="portrait-image image-second" />
+          <div class="burn-layer" aria-hidden="true"><div class="fire fire-one"></div><div class="fire fire-two"></div><div class="fire fire-three"></div></div>
+          <div class="particles" id="particles" aria-hidden="true"></div>
         </div>
+      </div>
+    </section>
+  </main>
 
-        <p class="about">
-          Certified MERN Stack Developer, Web Designer & Developer, and Trainer
-          specializing in modern web technologies, eCommerce, SEO, digital
-          marketing, Android development, and software quality assurance. As an
-          NSDA-certified professional, I focus on industry-oriented skills and
-          practical solutions for successful careers.
-        </p>
-
-        <div class="socials" aria-label="Social profiles"></div>
-      </section>
-
-      <section class="hero-right" aria-label="Profile image">
-        <div class="portrait-scene">
-          <div class="wave-container" aria-hidden="true">
-            <div class="wave wave-one"></div>
-            <div class="wave wave-two"></div>
-            <div class="wave wave-three"></div>
-            <div class="wave-glow"></div>
-          </div>
-
-          <div class="ring ring-one" aria-hidden="true"></div>
-          <div class="ring ring-two" aria-hidden="true"></div>
-
-          <div
-            class="portrait"
-            id="portrait"
-            role="button"
-            tabindex="0"
-            aria-label="Activate profile image transition"
-          >
-            <img
-              src="./personal-img/md-faysal-hossain-mern-stack-developer.png"
-              alt="MD Faysal Hossain, MERN Stack Developer"
-              class="portrait-image image-first"
-            />
-
-            <img
-              src="./personal-img/md-faysal-hossain-mern-stack-developer.jpeg"
-              alt="MD Faysal Hossain alternative profile portrait"
-              class="portrait-image image-second"
-            />
-
-            <div class="burn-layer" aria-hidden="true">
-              <div class="fire fire-one"></div>
-              <div class="fire fire-two"></div>
-              <div class="fire fire-three"></div>
-            </div>
-
-            <div class="particles" id="particles" aria-hidden="true"></div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <script src="./script.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
