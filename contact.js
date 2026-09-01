@@ -1,495 +1,377 @@
 "use strict";
 
 document.addEventListener("DOMContentLoaded", () => {
-    const menuButton = document.getElementById("menuButton");
-    const mobileMenu = document.getElementById("mobileMenu");
+  const menuButton = document.getElementById("menuButton");
+  const mobileMenu = document.getElementById("mobileMenu");
 
-    const form = document.getElementById("contactForm");
-    const submitButton = document.getElementById("submitButton");
-    const formStatus = document.getElementById("formStatus");
+  const form = document.getElementById("contactForm");
+  const submitButton = document.getElementById("submitButton");
+  const formStatus = document.getElementById("formStatus");
 
-    const year = document.getElementById("year");
+  const year = document.getElementById("year");
 
-    if (year) {
-        year.textContent = new Date().getFullYear();
-    }
+  if (year) {
+    year.textContent = new Date().getFullYear();
+  }
 
-    if (menuButton && mobileMenu) {
-        menuButton.addEventListener("click", () => {
-            const isOpen = menuButton.classList.toggle("open");
+  const currentYear = document.querySelector("[data-current-year]");
 
-            mobileMenu.classList.toggle("open", isOpen);
+  if (currentYear) {
+    currentYear.textContent = new Date().getFullYear();
+  }
 
-            menuButton.setAttribute(
-                "aria-expanded",
-                String(isOpen)
-            );
+  if (menuButton && mobileMenu) {
+    const menuLinks = mobileMenu.querySelectorAll("a");
 
-            menuButton.setAttribute(
-                "aria-label",
-                isOpen
-                    ? "Close navigation menu"
-                    : "Open navigation menu"
-            );
-        });
+    const openMenu = () => {
+      menuButton.classList.add("open");
+      menuButton.classList.add("active");
 
-        mobileMenu.querySelectorAll("a").forEach((link) => {
-            link.addEventListener("click", () => {
-                menuButton.classList.remove("open");
-                mobileMenu.classList.remove("open");
+      mobileMenu.classList.add("open");
 
-                menuButton.setAttribute(
-                    "aria-expanded",
-                    "false"
-                );
+      menuButton.setAttribute("aria-expanded", "true");
+      menuButton.setAttribute("aria-label", "Close navigation menu");
 
-                menuButton.setAttribute(
-                    "aria-label",
-                    "Open navigation menu"
-                );
-            });
-        });
-    }
-
-    const fields = {
-        name: {
-            element: document.getElementById("name"),
-            error: document.getElementById("nameError"),
-            message: "Please enter your name."
-        },
-
-        email: {
-            element: document.getElementById("email"),
-            error: document.getElementById("emailError"),
-            message: "Please enter a valid email address."
-        },
-
-        country: {
-            element: document.getElementById("country"),
-            error: document.getElementById("countryError"),
-            message: "Please select your country."
-        },
-
-        message: {
-            element: document.getElementById("message"),
-            error: document.getElementById("messageError"),
-            message: "Please write at least 10 characters."
-        }
+      document.body.classList.add("menu-open");
     };
 
-    const getFieldWrapper = (element) => {
-        return element
-            ? element.closest(".field")
-            : null;
+    const closeMenu = () => {
+      menuButton.classList.remove("open");
+      menuButton.classList.remove("active");
+
+      mobileMenu.classList.remove("open");
+
+      menuButton.setAttribute("aria-expanded", "false");
+      menuButton.setAttribute("aria-label", "Open navigation menu");
+
+      document.body.classList.remove("menu-open");
     };
 
-    const setError = (field, message) => {
-        if (!field.element) {
-            return;
-        }
+    menuButton.addEventListener("click", () => {
+      const isOpen = mobileMenu.classList.contains("open");
 
-        const wrapper = getFieldWrapper(field.element);
-
-        if (field.error) {
-            field.error.textContent = message;
-        }
-
-        field.element.setAttribute(
-            "aria-invalid",
-            "true"
-        );
-
-        if (wrapper) {
-            wrapper.classList.add("invalid");
-        }
-    };
-
-    const clearError = (field) => {
-        if (!field.element) {
-            return;
-        }
-
-        const wrapper = getFieldWrapper(field.element);
-
-        if (field.error) {
-            field.error.textContent = "";
-        }
-
-        field.element.removeAttribute(
-            "aria-invalid"
-        );
-
-        if (wrapper) {
-            wrapper.classList.remove("invalid");
-        }
-    };
-
-    const validateField = (fieldName) => {
-        const field = fields[fieldName];
-
-        if (!field || !field.element) {
-            return true;
-        }
-
-        const value = field.element.value.trim();
-
-        if (fieldName === "name") {
-            if (value.length < 2) {
-                setError(
-                    field,
-                    "Please enter your name."
-                );
-
-                return false;
-            }
-        }
-
-        if (fieldName === "email") {
-            if (
-                value.length === 0 ||
-                !field.element.validity.valid
-            ) {
-                setError(
-                    field,
-                    "Please enter a valid email address."
-                );
-
-                return false;
-            }
-        }
-
-        if (fieldName === "country") {
-            if (!value) {
-                setError(
-                    field,
-                    "Please select your country."
-                );
-
-                return false;
-            }
-        }
-
-        if (fieldName === "message") {
-            if (value.length < 10) {
-                setError(
-                    field,
-                    "Please write at least 10 characters."
-                );
-
-                return false;
-            }
-        }
-
-        clearError(field);
-
-        return true;
-    };
-
-    Object.keys(fields).forEach((fieldName) => {
-        const field = fields[fieldName];
-
-        if (!field.element) {
-            return;
-        }
-
-        field.element.addEventListener(
-            "blur",
-            () => {
-                validateField(fieldName);
-            }
-        );
-
-        field.element.addEventListener(
-            "input",
-            () => {
-                if (field.element.value.trim()) {
-                    clearError(field);
-                }
-            }
-        );
-
-        field.element.addEventListener(
-            "change",
-            () => {
-                validateField(fieldName);
-            }
-        );
+      if (isOpen) {
+        closeMenu();
+      } else {
+        openMenu();
+      }
     });
 
-    const updateTypingPlaceholder = (
-        input,
-        placeholder
-    ) => {
-        if (!input || !placeholder) {
-            return;
+    menuLinks.forEach((link) => {
+      link.addEventListener("click", () => {
+        closeMenu();
+      });
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && mobileMenu.classList.contains("open")) {
+        closeMenu();
+        menuButton.focus();
+      }
+    });
+
+    document.addEventListener(
+      "pointerdown",
+      (event) => {
+        if (!mobileMenu.classList.contains("open")) {
+          return;
         }
 
-        const update = () => {
-            if (input.value.length > 0) {
-                placeholder.classList.add("hidden");
-            } else {
-                placeholder.classList.remove("hidden");
-            }
-        };
+        if (
+          !mobileMenu.contains(event.target) &&
+          !menuButton.contains(event.target)
+        ) {
+          closeMenu();
+        }
+      },
+      {
+        passive: true,
+      },
+    );
 
-        input.addEventListener(
-            "input",
-            update
-        );
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 900) {
+        closeMenu();
+      }
+    });
+  }
 
-        input.addEventListener(
-            "focus",
-            update
-        );
+  const fields = {
+    name: {
+      element: document.getElementById("name"),
+      error: document.getElementById("nameError"),
+      message: "Please enter your name.",
+    },
 
-        input.addEventListener(
-            "blur",
-            update
-        );
+    email: {
+      element: document.getElementById("email"),
+      error: document.getElementById("emailError"),
+      message: "Please enter a valid email address.",
+    },
 
-        update();
+    country: {
+      element: document.getElementById("country"),
+      error: document.getElementById("countryError"),
+      message: "Please select your country.",
+    },
+
+    message: {
+      element: document.getElementById("message"),
+      error: document.getElementById("messageError"),
+      message: "Please write at least 10 characters.",
+    },
+  };
+
+  const getFieldWrapper = (element) => {
+    return element ? element.closest(".field") : null;
+  };
+
+  const setError = (field, message) => {
+    if (!field.element) {
+      return;
+    }
+
+    const wrapper = getFieldWrapper(field.element);
+
+    if (field.error) {
+      field.error.textContent = message;
+    }
+
+    field.element.setAttribute("aria-invalid", "true");
+
+    if (wrapper) {
+      wrapper.classList.add("invalid");
+    }
+  };
+
+  const clearError = (field) => {
+    if (!field.element) {
+      return;
+    }
+
+    const wrapper = getFieldWrapper(field.element);
+
+    if (field.error) {
+      field.error.textContent = "";
+    }
+
+    field.element.removeAttribute("aria-invalid");
+
+    if (wrapper) {
+      wrapper.classList.remove("invalid");
+    }
+  };
+
+  const validateField = (fieldName) => {
+    const field = fields[fieldName];
+
+    if (!field || !field.element) {
+      return true;
+    }
+
+    const value = field.element.value.trim();
+
+    if (fieldName === "name") {
+      if (value.length < 2) {
+        setError(field, "Please enter your name.");
+        return false;
+      }
+    }
+
+    if (fieldName === "email") {
+      if (value.length === 0 || !field.element.validity.valid) {
+        setError(field, "Please enter a valid email address.");
+        return false;
+      }
+    }
+
+    if (fieldName === "country") {
+      if (!value) {
+        setError(field, "Please select your country.");
+        return false;
+      }
+    }
+
+    if (fieldName === "message") {
+      if (value.length < 10) {
+        setError(field, "Please write at least 10 characters.");
+        return false;
+      }
+    }
+
+    clearError(field);
+
+    return true;
+  };
+
+  Object.keys(fields).forEach((fieldName) => {
+    const field = fields[fieldName];
+
+    if (!field.element) {
+      return;
+    }
+
+    field.element.addEventListener("blur", () => {
+      validateField(fieldName);
+    });
+
+    field.element.addEventListener("input", () => {
+      if (field.element.value.trim()) {
+        clearError(field);
+      }
+    });
+
+    field.element.addEventListener("change", () => {
+      validateField(fieldName);
+    });
+  });
+
+  const updateTypingPlaceholder = (input, placeholder) => {
+    if (!input || !placeholder) {
+      return;
+    }
+
+    const update = () => {
+      const hasValue = input.value.length > 0;
+
+      placeholder.classList.toggle("hidden", hasValue);
     };
 
-    updateTypingPlaceholder(
-        document.getElementById("name"),
-        document.querySelector(
-            ".name-placeholder"
-        )
+    input.addEventListener("input", update);
+    input.addEventListener("focus", update);
+    input.addEventListener("blur", update);
+
+    update();
+  };
+
+  updateTypingPlaceholder(
+    document.getElementById("name"),
+    document.querySelector(".name-placeholder"),
+  );
+
+  updateTypingPlaceholder(
+    document.getElementById("subject"),
+    document.querySelector(".subject-placeholder"),
+  );
+
+  updateTypingPlaceholder(
+    document.getElementById("message"),
+    document.querySelector(".message-placeholder"),
+  );
+
+  const whatsapp = document.getElementById("whatsapp");
+
+  if (whatsapp) {
+    whatsapp.addEventListener("input", () => {
+      whatsapp.value = whatsapp.value.replace(/[^\d+\s()-]/g, "");
+    });
+  }
+
+  const softTouchLayer = document.getElementById("softTouchLayer");
+
+  if (softTouchLayer) {
+    let touchTimer;
+
+    const showSoftColor = (x, y) => {
+      softTouchLayer.style.left = `${x}px`;
+      softTouchLayer.style.top = `${y}px`;
+
+      softTouchLayer.classList.remove("active");
+
+      void softTouchLayer.offsetWidth;
+
+      softTouchLayer.classList.add("active");
+
+      clearTimeout(touchTimer);
+
+      touchTimer = setTimeout(() => {
+        softTouchLayer.classList.remove("active");
+      }, 1400);
+    };
+
+    document.addEventListener(
+      "pointerdown",
+      (event) => {
+        showSoftColor(event.clientX, event.clientY);
+      },
+      {
+        passive: true,
+      },
     );
+  }
 
-    updateTypingPlaceholder(
-        document.getElementById("subject"),
-        document.querySelector(
-            ".subject-placeholder"
-        )
-    );
+  const whatsappBox = document.getElementById("whatsappBox");
 
-    updateTypingPlaceholder(
-        document.getElementById("message"),
-        document.querySelector(
-            ".message-placeholder"
-        )
-    );
+  const openWhatsApp = () => {
+    window.open("https://wa.me/8801595530901", "_blank", "noopener,noreferrer");
+  };
 
-    const whatsapp =
-        document.getElementById("whatsapp");
+  if (whatsappBox) {
+    whatsappBox.addEventListener("click", openWhatsApp);
 
-    if (whatsapp) {
-        whatsapp.addEventListener(
-            "input",
-            () => {
-                whatsapp.value =
-                    whatsapp.value.replace(
-                        /[^\d+\s()-]/g,
-                        ""
-                    );
-            }
-        );
-    }
+    whatsappBox.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        openWhatsApp();
+      }
+    });
+  }
 
-    const softTouchLayer =
-        document.getElementById(
-            "softTouchLayer"
-        );
+  if (form && submitButton) {
+    form.addEventListener("submit", (event) => {
+      let isValid = true;
 
-    if (softTouchLayer) {
-        let touchTimer;
+      Object.keys(fields).forEach((fieldName) => {
+        const valid = validateField(fieldName);
 
-        const showSoftColor = (
-            x,
-            y
-        ) => {
-            softTouchLayer.style.left =
-                `${x}px`;
+        if (!valid) {
+          isValid = false;
+        }
+      });
 
-            softTouchLayer.style.top =
-                `${y}px`;
+      if (!isValid) {
+        event.preventDefault();
 
-            softTouchLayer.classList.remove(
-                "active"
-            );
-
-            void softTouchLayer.offsetWidth;
-
-            softTouchLayer.classList.add(
-                "active"
-            );
-
-            clearTimeout(touchTimer);
-
-            touchTimer = setTimeout(() => {
-                softTouchLayer.classList.remove(
-                    "active"
-                );
-            }, 1400);
-        };
-
-        document.addEventListener(
-            "pointerdown",
-            (event) => {
-                showSoftColor(
-                    event.clientX,
-                    event.clientY
-                );
-            },
-            {
-                passive: true
-            }
-        );
-    }
-
-    const whatsappBox =
-        document.getElementById(
-            "whatsappBox"
+        const firstInvalid = Object.values(fields).find(
+          (field) =>
+            field.element &&
+            field.element.getAttribute("aria-invalid") === "true",
         );
 
-    if (whatsappBox) {
-        whatsappBox.addEventListener(
-            "click",
-            () => {
-                window.open(
-                    "https://wa.me/8801595530901",
-                    "_blank",
-                    "noopener,noreferrer"
-                );
-            }
-        );
+        if (firstInvalid) {
+          firstInvalid.element.focus();
+        }
 
-        whatsappBox.addEventListener(
-            "keydown",
-            (event) => {
-                if (
-                    event.key === "Enter" ||
-                    event.key === " "
-                ) {
-                    event.preventDefault();
+        if (formStatus) {
+          formStatus.textContent = "Please correct the highlighted fields.";
 
-                    window.open(
-                        "https://wa.me/8801595530901",
-                        "_blank",
-                        "noopener,noreferrer"
-                    );
-                }
-            }
-        );
-    }
+          formStatus.className = "form-status error";
+        }
 
-    if (
-        form &&
-        submitButton
-    ) {
-        form.addEventListener(
-            "submit",
-            (event) => {
-                let isValid = true;
+        return;
+      }
 
-                Object.keys(fields).forEach(
-                    (fieldName) => {
-                        const valid =
-                            validateField(
-                                fieldName
-                            );
+      submitButton.classList.add("loading");
 
-                        if (!valid) {
-                            isValid = false;
-                        }
-                    }
-                );
+      submitButton.setAttribute("aria-disabled", "true");
+      submitButton.setAttribute("aria-label", "Sending message");
 
-                if (!isValid) {
-                    event.preventDefault();
+      if (formStatus) {
+        formStatus.textContent = "Sending your message...";
+        formStatus.className = "form-status sending";
+      }
+    });
+  }
 
-                    const firstInvalid =
-                        Object.values(
-                            fields
-                        ).find(
-                            (field) =>
-                                field.element &&
-                                field.element.getAttribute(
-                                    "aria-invalid"
-                                ) === "true"
-                        );
-
-                    if (firstInvalid) {
-                        firstInvalid.element.focus();
-                    }
-
-                    if (formStatus) {
-                        formStatus.textContent =
-                            "Please correct the highlighted fields.";
-
-                        formStatus.className =
-                            "form-status error";
-                    }
-
-                    return;
-                }
-
-                submitButton.classList.add(
-                    "loading"
-                );
-
-                submitButton.setAttribute(
-                    "aria-disabled",
-                    "true"
-                );
-
-                submitButton.setAttribute(
-                    "aria-label",
-                    "Sending message"
-                );
-
-                if (formStatus) {
-                    formStatus.textContent =
-                        "Sending your message...";
-
-                    formStatus.className =
-                        "form-status sending";
-                }
-            }
-        );
-    }
-
-    if (submitButton) {
-        submitButton.addEventListener(
-            "click",
-            () => {
-                if (
-                    !form ||
-                    form.checkValidity() === false
-                ) {
-                    return;
-                }
-
-                submitButton.classList.add(
-                    "loading"
-                );
-            }
-        );
-    }
-
-    if (form) {
-        form.addEventListener(
-            "keydown",
-            (event) => {
-                if (
-                    event.key === "Enter" &&
-                    event.target.tagName === "INPUT" &&
-                    event.target.type !== "submit"
-                ) {
-                    return;
-                }
-            }
-        );
-    }
-
-    const currentYear =
-        document.querySelector(
-            "[data-current-year]"
-        );
-
-    if (currentYear) {
-        currentYear.textContent =
-            new Date().getFullYear();
-    }
+  if (form) {
+    form.addEventListener("keydown", (event) => {
+      if (
+        event.key === "Enter" &&
+        event.target.tagName === "INPUT" &&
+        event.target.type !== "submit"
+      ) {
+        return;
+      }
+    });
+  }
 });
