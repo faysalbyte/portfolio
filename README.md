@@ -1,248 +1,176 @@
-# 🚀 MD FAYSAL HOSSAIN | Professional Portfolio
-
-![Portfolio Banner](https://avatars.githubusercontent.com/u/229717438?v=4)
-
 <div align="center">
+  
+# 🚀 MD FAYSAL HOSSAIN
+  
+### Certified MERN Stack Developer | Web Designer & Developer | Trainer | SEO Expert
 
-[![Website](https://img.shields.io/badge/Website-Portfolio-ff7a00?style=for-the-badge&logo=google-chrome&logoColor=white)](https://md-faysal-hossain-bdd.github.io/portfolio/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-View-ff7a00?style=for-the-badge&logo=google-chrome&logoColor=white)](https://md-faysal-hossain-bdd.github.io/portfolio/)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/md-faysal-hossain-bdd)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/md-faysal-hossain)
 [![Twitter](https://img.shields.io/badge/Twitter-Follow-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/mdfaysal)
+[![YouTube](https://img.shields.io/badge/YouTube-Subscribe-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@mdfaysal)
+
+---
+
+<img src="https://avatars.githubusercontent.com/u/229717438?v=4" alt="MD Faysal Hossain" width="200" height="200" style="border-radius: 50%; object-fit: cover; border: 4px solid #fbb9b6; box-shadow: 0 0 30px rgba(251, 185, 182, 0.3);">
 
 </div>
 
-## 📋 Overview
+---
 
-A modern, responsive portfolio website showcasing my expertise as a **Certified MERN Stack Developer**, **Web Designer & Developer**, and **NSDA Certified Professional**. This portfolio demonstrates my skills in modern web technologies, responsive design, and interactive user experiences.
+## 📋 About Me
+
+Hello! I'm **MD Faysal Hossain**, a passionate and certified **MERN Stack Developer** with expertise in web design, development, and training. I specialize in creating modern, responsive, and user-friendly web applications using cutting-edge technologies.
+
+### 🎯 What I Do
+
+- 💻 **Full Stack Development** - MERN Stack (MongoDB, Express.js, React, Node.js)
+- 🎨 **Web Design** - Modern, responsive, and accessible UI/UX
+- 📱 **Android Development** - Kotlin-based mobile applications
+- 🔍 **SEO & Digital Marketing** - Search engine optimization and marketing strategies
+- 🎓 **Training & Mentoring** - Industry-oriented skills development
+
+### 🏆 Certifications
+
+- 🏅 **NSDA Certified** - Web Design & Web Developer for Freelancing (Level 3 & 5)
+- 🏅 **NSDA Certified** - Android App Development with Kotlin (Level 4)
+- 🏅 **NSDA Certified** - Digital Marketing for Freelancing (SEO) (Level 3 & 4)
+- 🏅 **NSDA Certified** - Software Quality Assurance (Level 3)
+
+---
+
+## 🛠️ Technologies & Skills
+
+### Frontend Development
+<div align="center">
+  
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+
+</div>
+
+### Backend Development
+<div align="center">
+  
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+
+</div>
+
+### Tools & Platforms
+<div align="center">
+  
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![GSAP](https://img.shields.io/badge/GSAP-22C55E?style=for-the-badge&logo=greensock&logoColor=white)
+![WordPress](https://img.shields.io/badge/WordPress-21759B?style=for-the-badge&logo=wordpress&logoColor=white)
+![Shopify](https://img.shields.io/badge/Shopify-7AB55C?style=for-the-badge&logo=shopify&logoColor=white)
+
+</div>
+
+---
+
+## 📂 Featured Projects
+
+### 🎨 Vanilla CSS Projects
+- **Modern Landing Page** - Responsive landing page with semantic HTML and raw CSS
+- **Glass Interface** - Lightweight design with modern visual hierarchy
+- **Portfolio UI** - Accessible and responsive portfolio interface
+- **Responsive Dashboard** - Reusable components and device-friendly spacing
+
+### 🚀 Bootstrap Projects
+- **Business Website** - Professional business site using Bootstrap's grid system
+- **Admin Panel** - Dashboard concept with responsive components
+
+### ⚡ Tailwind CSS Projects
+- **SaaS Landing Page** - Modern SaaS interface with utility-first styling
+- **Creative Agency** - Bold agency layout with responsive cards
+
+### 💡 JavaScript Projects
+- **Interactive App** - Dynamic web application with native JavaScript
+- **Dynamic Dashboard** - Interactive dashboard with API-oriented architecture
+
+### 🎬 GSAP Projects
+- **Motion Experience** - CSS effects with GSAP-powered animations
+- **Animated Portfolio** - Immersive portfolio with smooth transitions
+
+---
+
+## 📈 GitHub Statistics
+
+<div align="center">
+
+<img src="https://github-readme-stats.vercel.app/api?username=md-faysal-hossain-bdd&show_icons=true&theme=radical" alt="GitHub Stats" width="48%">
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=md-faysal-hossain-bdd&theme=radical" alt="GitHub Streak" width="48%">
+
+<br>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=md-faysal-hossain-bdd&layout=compact&theme=radical" alt="Top Languages" width="50%">
+
+</div>
+
+---
+
+## 🌟 Portfolio Highlights
 
 ### ✨ Key Features
 
 - 🎨 **Modern UI/UX Design** - Neumorphic design with smooth animations
-- 📱 **Fully Responsive** - Optimized for all devices (mobile, tablet, desktop)
+- 📱 **Fully Responsive** - Optimized for all devices
 - ♿ **Accessibility First** - WCAG compliant with ARIA attributes
-- 🚀 **Performance Optimized** - Fast loading with lazy loading and optimized assets
-- 🎬 **Interactive Elements** - GSAP animations, video carousels, hover effects
-- 🔍 **SEO Friendly** - Meta tags, semantic HTML, structured data
-- 🌙 **Reduced Motion Support** - Respects user preferences
+- 🚀 **Performance Optimized** - Fast loading with lazy loading
+- 🎬 **Interactive Elements** - GSAP animations and video carousels
+- 🔍 **SEO Friendly** - Meta tags and semantic HTML
 
-## 🛠️ Technologies Used
-
-### Frontend Stack
+### 🎯 Design Features
 
 <div align="center">
 
-| Technology | Purpose |
-|------------|---------|
-| ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) | Semantic Structure |
-| ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) | Styling & Animations |
-| ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) | Interactivity |
-| ![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=flat-square&logo=bootstrap&logoColor=white) | Responsive Framework |
-| ![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) | Utility-First Styling |
-| ![GSAP](https://img.shields.io/badge/GSAP-22C55E?style=flat-square&logo=greensock&logoColor=white) | Advanced Animations |
+| Feature | Description |
+|---------|-------------|
+| **Neumorphic Design** | Soft shadows and highlights |
+| **Glass-morphism** | Modern glass effects |
+| **Smooth Transitions** | Fluid animations |
+| **Consistent Language** | Unified design system |
 
 </div>
 
-### Tools & Libraries
+---
 
-- [Inter Font](https://fonts.google.com/specimen/Inter) - Clean typography
-- [Font Awesome](https://fontawesome.com/) - Icon library
-- [Intersection Observer API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API) - Lazy loading
-- [GSAP ScrollTrigger](https://greensock.com/scrolltrigger/) - Scroll animations
+## 📱 Connect With Me
 
-## 📂 Project Structure
+<div align="center">
 
-```
-portfolio/
-├── index.html              # Main HTML file
-├── portfolio.css           # All styles (inline in single file)
-├── portfolio.js            # All JavaScript functionality
-├── personal-img/           # Profile images
-│   ├── md-faysal-hossain-mern-stack-developer.png
-│   └── md-faysal-hossain-mern-stack-developer.jpeg
-└── videos/                 # Project demonstration videos
-    ├── vanilla-01.mp4
-    ├── bootstrap-01.mp4
-    ├── tailwind-01.mp4
-    ├── javascript-01.mp4
-    └── gsap-01.mp4
-```
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-View-ff7a00?style=for-the-badge)](https://md-faysal-hossain-bdd.github.io/portfolio/)
+[![Email](https://img.shields.io/badge/📧_Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:faysal@example.com)
+[![LinkedIn](https://img.shields.io/badge/💼_LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/md-faysal-hossain)
+[![Twitter](https://img.shields.io/badge/🐦_Twitter-Follow-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/mdfaysal)
+[![YouTube](https://img.shields.io/badge/🎬_YouTube-Subscribe-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@mdfaysal)
+[![GitHub](https://img.shields.io/badge/🐙_GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/md-faysal-hossain-bdd)
 
-## 🎯 Features Breakdown
+</div>
 
-### 1. Navigation System
-- Fixed, glass-morphism navbar
-- Responsive hamburger menu for mobile
-- Smooth scroll to sections
-- Accessible ARIA labels
-- Keyboard navigable
-
-### 2. Hero Section
-- Animated typing effect
-- Dynamic role display
-- Professional introduction
-- Call-to-action elements
-
-### 3. Portfolio Showcase
-- Categorized project sections:
-  - Vanilla CSS Projects
-  - Bootstrap Projects
-  - Tailwind CSS Projects
-  - JavaScript Projects
-  - GSAP Animation Projects
-
-### 4. Interactive Cards
-- Hover animations
-- Video thumbnails
-- "Website" and "Details" buttons
-- Auto-playing videos on hover/scroll
-- Modal popup for project details
-
-### 5. Accessibility Features
-- Proper heading hierarchy
-- ARIA labels and roles
-- Focus management
-- Keyboard navigation
-- Reduced motion preferences
-- High contrast focus indicators
-
-### 6. Performance Optimizations
-- Lazy loading images
-- Video autoplay with Intersection Observer
-- CSS animations with GPU acceleration
-- Minimal external dependencies
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Modern web browser (Chrome, Firefox, Safari, Edge)
-- Git (for cloning)
-
-### Installation
-
-1. **Clone the repository**
-```bash
-git clone https://github.com/md-faysal-hossain-bdd/portfolio.git
-```
-
-2. **Navigate to project directory**
-```bash
-cd portfolio
-```
-
-3. **Open in browser**
-```bash
-# Simply open index.html in your browser
-# Or use a local server
-python -m http.server 8000
-# Visit http://localhost:8000
-```
-
-### Development
-
-1. **Make changes** to `index.html`, `portfolio.css`, or `portfolio.js`
-2. **Test locally** by opening the file in your browser
-3. **Commit changes** with meaningful messages
-
-## 📱 Responsive Design
-
-The portfolio is fully responsive with breakpoints at:
-
-| Device | Breakpoint | Features |
-|--------|------------|----------|
-| Mobile | < 480px | Stacked layout, larger touch targets |
-| Tablet | 481px - 850px | Mixed layout, hamburger menu |
-| Desktop | > 850px | Full grid layout, hover effects |
-| Large Desktop | > 1200px | Maximum width, enhanced spacing |
-
-## ♿ Accessibility Standards
-
-This portfolio meets WCAG 2.1 AA standards:
-
-- ✅ Semantic HTML structure
-- ✅ ARIA labels for interactive elements
-- ✅ Keyboard navigation support
-- ✅ Focus indicators on all interactive elements
-- ✅ Reduced motion support
-- ✅ Color contrast compliance
-- ✅ Screen reader friendly
-- ✅ Proper heading hierarchy
-
-## 🔍 SEO Optimizations
-
-- ✅ Meta tags (title, description, keywords)
-- ✅ Open Graph tags for social sharing
-- ✅ Twitter Card tags
-- ✅ Semantic HTML5 elements
-- ✅ Proper heading structure
-- ✅ Alt text for images
-- ✅ Descriptive link text
-- ✅ Schema.org markup support
-
-## 🎨 Design Features
-
-### Neumorphic Design
-- Soft shadows and highlights
-- Glass-morphism effects
-- Smooth transitions
-- Consistent design language
-
-### Animations
-- GSAP scroll animations
-- Hover effects on cards
-- Typing effect for roles
-- Wave animations on profile image
-- Smooth carousel movements
-
-### Color Scheme
-- **Primary:** #fbb9b6 (soft pink)
-- **Dark:** #f55d56 (coral red)  
-- **Background:** #edf1f6 (light gray)
-- **Surface:** #f7f9fc (off-white)
-- **Text:** #202936 (dark blue-gray)
-
-## 🤝 Contributing
-
-Contributions are welcome! Here's how you can help:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-### Contribution Guidelines
-- Follow existing code style
-- Maintain accessibility standards
-- Test on multiple browsers and devices
-- Write meaningful commit messages
-- Update documentation as needed
+---
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 📞 Contact
-
-**MD FAYSAL HOSSAIN**
-- 📧 Email: [faysal@example.com](mailto:faysal@example.com)
-- 🌐 Website: [Portfolio](https://md-faysal-hossain-bdd.github.io/portfolio/)
-- 💼 LinkedIn: [MD Faysal Hossain](https://linkedin.com/in/md-faysal-hossain)
-- 🐦 Twitter: [@mdfaysal](https://twitter.com/mdfaysal)
-- 📱 GitHub: [@md-faysal-hossain-bdd](https://github.com/md-faysal-hossain-bdd)
-
-## 🙏 Acknowledgments
-
-- [Unsplash](https://unsplash.com/) for project placeholder images
-- [GSAP](https://greensock.com/gsap/) for animation library
-- [Google Fonts](https://fonts.google.com/) for typography
-- [Font Awesome](https://fontawesome.com/) for icons
-
 ---
 
 <div align="center">
 
-**⭐ If you find this project useful, please give it a star!**
+### ⭐ If you find this portfolio useful, please give it a star!
 
-Made with ❤️ by [MD FAYSAL HOSSAIN](https://github.com/md-faysal-hossain-bdd)
+**Made with ❤️ by [MD FAYSAL HOSSAIN](https://github.com/md-faysal-hossain-bdd)**
+
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer)
 
 </div>
