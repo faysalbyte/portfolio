@@ -107,12 +107,9 @@ Hello! I'm **MD Faysal Hossain**, a passionate and certified **MERN Stack Develo
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=md-faysal-hossain-bdd&show_icons=true&theme=radical" alt="GitHub Stats" width="48%">
+
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=md-faysal-hossain-bdd&theme=radical" alt="GitHub Streak" width="48%">
 
-<br>
-
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=md-faysal-hossain-bdd&layout=compact&theme=radical" alt="Top Languages" width="50%">
 
 </div>
 
