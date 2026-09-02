@@ -4,11 +4,11 @@
   
 ### Certified MERN Stack Developer | Web Designer & Developer | Trainer | SEO Expert
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-View-ff7a00?style=for-the-badge&logo=google-chrome&logoColor=white)](https://md-faysal-hossain-bdd.github.io/portfolio/)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/md-faysal-hossain-bdd)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/md-faysal-hossain)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/mdfaysal)
-[![YouTube](https://img.shields.io/badge/YouTube-Subscribe-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@mdfaysal)
+[![Portfolio](https://img.shields.io/badge/Portfolio-View-ff7a00?style=for-the-badge&logo=google-chrome&logoColor=white)](https://faysalbyte.github.io/portfolio/)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/faysalbyte)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/faysalbyte)
+[![Twitter](https://img.shields.io/badge/Twitter-Follow-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/faysalbyte)
+[![YouTube](https://img.shields.io/badge/YouTube-Subscribe-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@md.faysal.hossain)
 
 ---
 
@@ -145,12 +145,12 @@ Hello! I'm **MD Faysal Hossain**, a passionate and certified **MERN Stack Develo
 
 <div align="center">
 
-[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-View-ff7a00?style=for-the-badge)](https://md-faysal-hossain-bdd.github.io/portfolio/)
-[![Email](https://img.shields.io/badge/📧_Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:faysal@example.com)
-[![LinkedIn](https://img.shields.io/badge/💼_LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/md-faysal-hossain)
-[![Twitter](https://img.shields.io/badge/🐦_Twitter-Follow-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/mdfaysal)
-[![YouTube](https://img.shields.io/badge/🎬_YouTube-Subscribe-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@mdfaysal)
-[![GitHub](https://img.shields.io/badge/🐙_GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/md-faysal-hossain-bdd)
+[![Portfolio](https://img.shields.io/badge/🌐_Portfolio-View-ff7a00?style=for-the-badge)](https://faysalbyte.github.io/portfolio/)
+[![Email](https://img.shields.io/badge/📧_Email-Contact-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:md.faysal.hossain.moti.bddh@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/💼_LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/faysalbyte)
+[![Twitter](https://img.shields.io/badge/🐦_Twitter-Follow-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/faysalbyte)
+[![YouTube](https://img.shields.io/badge/🎬_YouTube-Subscribe-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@md.faysal.hossain)
+[![GitHub](https://img.shields.io/badge/🐙_GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/faysalbyte)
 
 </div>
 
@@ -166,7 +166,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ### ⭐ If you find this portfolio useful, please give it a star!
 
-**Made with ❤️ by [MD FAYSAL HOSSAIN](https://github.com/md-faysal-hossain-bdd)**
+**Made with ❤️ by [MD FAYSAL HOSSAIN](https://github.com/faysalbyte)**
 
 ![Footer](https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer)
 
