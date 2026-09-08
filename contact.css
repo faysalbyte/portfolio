@@ -39,13 +39,16 @@ body {
   color: #39424e;
   line-height: 1.6;
 }
+
 :focus-visible {
   outline: 3px solid rgba(86, 40, 238, 0.35);
   outline-offset: 3px;
 }
+
 :focus:not(:focus-visible) {
   outline: none;
 }
+
 .error-message {
   display: block;
   min-height: 19px;
@@ -66,18 +69,21 @@ body {
 .form-row.invalid .form-label {
   color: #8e2424;
 }
+
 .background,
 .background *,
 .orb,
 .stars {
   pointer-events: none;
 }
+
 img,
 svg,
 video,
 canvas {
   max-width: 100%;
 }
+
 h1,
 h2,
 h3,
@@ -100,6 +106,7 @@ label {
     scroll-behavior: auto !important;
   }
 }
+
 .reduce-motion *,
 .reduce-motion *::before,
 .reduce-motion *::after {
@@ -107,12 +114,14 @@ label {
   animation-iteration-count: 1 !important;
   transition-duration: 0.01ms !important;
 }
+
 button,
 input,
 select,
 textarea {
   font: inherit;
 }
+
 button,
 a,
 input,
@@ -137,16 +146,12 @@ button {
   overflow: hidden;
   pointer-events: none;
   background:
-    radial-gradient(
-      circle at 15% 20%,
+    radial-gradient(circle at 15% 20%,
       rgba(92, 99, 242, 0.08),
-      transparent 32%
-    ),
-    radial-gradient(
-      circle at 85% 80%,
+      transparent 32%),
+    radial-gradient(circle at 85% 80%,
       rgba(32, 200, 120, 0.08),
-      transparent 30%
-    ),
+      transparent 30%),
     var(--bg);
 }
 
@@ -233,6 +238,7 @@ button {
   outline-offset: 5px;
   border-radius: 10px;
 }
+
 .brand-dots {
   display: inline-block;
   min-width: 18px;
@@ -247,6 +253,7 @@ button {
 }
 
 @keyframes brandDots {
+
   0%,
   100% {
     opacity: 0.25;
@@ -272,6 +279,7 @@ button {
     transform: translateY(1px);
   }
 }
+
 .nav-links {
   display: flex;
   align-items: center;
@@ -405,6 +413,7 @@ button {
 .menu-button.open span:nth-child(3) {
   transform: translateY(-7px) rotate(-45deg);
 }
+
 .mobile-menu {
   position: fixed;
 
@@ -729,6 +738,7 @@ button {
 }
 
 @keyframes waterWave {
+
   0%,
   100% {
     transform: scale(0.85) rotate(0deg);
@@ -744,6 +754,7 @@ button {
 }
 
 @keyframes whatsappPulse {
+
   0%,
   100% {
     transform: translateZ(0) scale(1);
@@ -810,7 +821,7 @@ button {
   font-weight: 700;
 }
 
-.field label > span:not(.optional) {
+.field label>span:not(.optional) {
   color: var(--red);
 }
 
@@ -910,12 +921,14 @@ button {
     visibility 0.2s ease,
     transform 0.2s ease;
 }
+
 .input-wrapper .typing-placeholder {
   top: 50%;
   left: 17px;
 }
+
 .textarea-wrapper .typing-placeholder,
-.input-wrapper textarea + .typing-placeholder {
+.input-wrapper textarea+.typing-placeholder {
   top: 17px;
   transform: none;
 }
@@ -927,20 +940,24 @@ button {
 }
 
 .textarea-wrapper .typing-placeholder.hidden,
-.input-wrapper textarea + .typing-placeholder.hidden {
+.input-wrapper textarea+.typing-placeholder.hidden {
   transform: translateX(4px);
 }
+
 .textarea-shell .typing-placeholder {
   top: 17px;
   transform: none;
 }
+
 .form-control::placeholder {
   color: transparent;
   opacity: 0;
 }
+
 .form-control:focus-visible {
   outline: none;
 }
+
 .typing-placeholder .orange-dot,
 .typing-placeholder .red-dot {
   display: inline-block;
@@ -957,6 +974,7 @@ button {
 }
 
 @keyframes dotBounce {
+
   0%,
   100% {
     opacity: 0.35;
@@ -968,6 +986,7 @@ button {
     transform: translateY(-3px);
   }
 }
+
 .typing-placeholder span {
   display: inline-block;
 }
@@ -1388,6 +1407,7 @@ button {
     transition-duration: 0.01ms !important;
   }
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -1433,16 +1453,12 @@ a {
   z-index: -10;
   overflow: hidden;
   background:
-    radial-gradient(
-      circle at 15% 20%,
+    radial-gradient(circle at 15% 20%,
       rgba(255, 255, 255, 0.95),
-      transparent 30%
-    ),
-    radial-gradient(
-      circle at 85% 75%,
+      transparent 30%),
+    radial-gradient(circle at 85% 75%,
       rgba(210, 218, 230, 0.55),
-      transparent 35%
-    ),
+      transparent 35%),
     #eef1f5;
 }
 
@@ -1846,6 +1862,7 @@ a {
 }
 
 @keyframes whatsappPulse {
+
   0%,
   100% {
     transform: scale(1);
@@ -2411,6 +2428,7 @@ textarea:required:valid:not(:placeholder-shown) {
 }
 
 @media (hover: hover) {
+
   .social-icon-list li a:hover .icon,
   .social-icon-list li a:hover .tiktok-svg {
     color: #fff;
@@ -2424,11 +2442,13 @@ textarea:required:valid:not(:placeholder-shown) {
 }
 
 @media (hover: none) {
+
   .social-icon-list li a:active .icon,
   .social-icon-list li a:active .tiktok-svg {
     color: #fff;
     fill: #fff;
   }
+
   .social-icon-list li a:active:before {
     top: 0;
   }
@@ -2448,27 +2468,35 @@ textarea:required:valid:not(:placeholder-shown) {
 .social-icon-list li:nth-child(1) a:before {
   background: #1877f2;
 }
+
 .social-icon-list li:nth-child(2) a:before {
   background: #e60023;
 }
+
 .social-icon-list li:nth-child(3) a:before {
   background: #24a1de;
 }
+
 .social-icon-list li:nth-child(4) a:before {
   background: #ff0000;
 }
+
 .social-icon-list li:nth-child(5) a:before {
   background: #010101;
 }
+
 .social-icon-list li:nth-child(6) a:before {
   background: #000000;
 }
+
 .social-icon-list li:nth-child(7) a:before {
   background: #0077b5;
 }
+
 .social-icon-list li:nth-child(8) a:before {
   background: #e1306c;
 }
+
 .social-icon-list li:nth-child(9) a:before {
   background: #ea4335;
 }
